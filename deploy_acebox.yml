@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: no
+
+  tasks:
+           
+  - name: Stop easyTravel processses
+    command: sudo reboot
+    ignore_errors: no
+    delegate_to: ace-box

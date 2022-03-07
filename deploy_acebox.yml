@@ -5,6 +5,6 @@
   tasks:
            
   - name: Reboot the machine
-    command: /bin/sh /opt/reboot.sh
+    command: sudo sh /opt/reboot.sh
     ignore_errors: no
     delegate_to: ace-box

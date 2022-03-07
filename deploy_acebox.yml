@@ -3,8 +3,7 @@
   become: no
 
   tasks:
-           
-  - name: Reboot the machine
-    command: sudo sh /opt/reboot.sh
-    ignore_errors: no
+  
+  - name: Unconditionally reboot the machine with all defaults
+    reboot:
     delegate_to: ace-box

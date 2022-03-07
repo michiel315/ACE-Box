@@ -4,7 +4,7 @@
 
   tasks:
            
-  - name: Stop easyTravel processses
-    command: sudo reboot
+  - name: Reboot the machine
+    command: sudo sh /home/michiel_otten/reboot.sh
     ignore_errors: no
     delegate_to: ace-box
